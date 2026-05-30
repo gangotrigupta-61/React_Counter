@@ -1,16 +1,41 @@
-# React + Vite
+# Counter App — Frontend Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small frontend demo built with modern tooling to showcase interactive UI basics. The app implements a counter with increment, decrement and reset actions, boundary validation, and Tailwind-based styling.
 
-Currently, two official plugins are available:
+What you'll find
+- A compact, single-component implementation that is easy to read and extend.
+- Basic UX considerations: min/max bounds and clear user feedback.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Core concepts demonstrated
+- React Hooks: `useState` for local component state.
+- Event handling: discrete handlers for `Increase`, `Decrease`, and `Reset`.
+- Styling: Tailwind CSS utility classes for quick layout and visual polish.
 
-## React Compiler
+Tech stack
+- React — functional components & hooks
+- Vite — fast dev server and build
+- Tailwind CSS — utility-first styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Quick start
+```bash
+npm install
+npm run dev
+```
+Open the app at the URL printed by Vite (usually `http://localhost:5173`).
 
-## Expanding the ESLint configuration
+Key file
+- [src/App.jsx](src/App.jsx#L1-L200): single-file implementation demonstrating the core logic and UI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features
+- Increment, decrement, and reset controls.
+- Enforced counter range: 0 (min) to 50 (max) with alert messages.
+
+Suggested next steps
+- Replace `alert` popups with in-UI notifications or toasts.
+- Add unit tests for component logic (Jest + React Testing Library).
+- Improve accessibility (ARIA attributes, keyboard interactions).
+- Deploy to Netlify/Vercel and add a live demo link.
+
+---
+
+This is intended as a focused frontend learning project and a starting point for iterative improvements.
